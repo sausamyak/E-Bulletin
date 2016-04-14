@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_main">Android Push Notification</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="gcm_registered">Device successfully registered!</string>
+    <string name="gcm_unregistered">Device successfully unregistered!</string>
+    <string name="gcm_message">You got a message</string>
+    <string name="gcm_error">Error (%1$s)</string>
+    <string name="gcm_recoverable_error">Recoverable error (%1$s).</string>
+    <string name="gcm_deleted">Server deleted %1$d pending message!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Successfully added device!</string>
+    <string name="server_unregistered">Successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="option_register">Register</string>
+    <string name="option_unregister">Unregister</string>
+    <string name="option_clear">Clear</string>
+    <string name="option_exit">Exit</string>
+
+    <!-- validations -->
+    <string name="validation_server">Please set your Server Url and GCM Sender ID</string>
+
+</resources>

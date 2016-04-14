@@ -1,0 +1,81 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eBulletin</string>
+    <string name="action_setting">Setting</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="welcome">Welcome to eBulletin application !</string>
+    <string name="logout_message">Do you want to logout the app?</string>
+
+    <!--  -->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alert_title">Alert !</string>
+    <string name="loading_title">Please Wait !</string>
+    <string name="loading_msg">Loading....</string>
+    <string name="content_description"></string>
+
+    <!-- header -->
+    <string name="header_home">Home</string>
+    <string name="header_login">Login</string>
+    <string name="header_registration">SignUp</string>
+    <string name="header_view_notice_list">View Notice</string>
+    <string name="header_view_notice">Notice</string>
+    <string name="header_post_notice">Post Notice</string>
+    <string name="header_reset_password">Forget Password</string>
+    <string name="header_about_us">About Us</string>
+
+    <!-- about us -->
+    <string name="about_us"><![CDATA[A\n\nProject Report \n\non\n\ne-Bulletin\n\nSubmitted towards partial fulfilment of the requirement for the award of degree\n\nIntegrated Degree (B.Tech-Computer Science & Engineering)-(MBA)]]></string>
+    <string name="submitted_by">Submitted By: \Samyak Sau (7CSE)</string>
+
+    <!-- login -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">LogIn</string>
+    <string name="sign_up">SignUp</string>
+    <string name="forget_password"><u>Forgot Password !</u></string>
+
+    <!-- reset password -->
+    <string name="reset_password">Get your password</string>
+    <string name="reset">Get Password</string>
+
+    <!-- registration -->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="designation">Designation</string>
+    <string name="faculty">Faculty</string>
+    <string name="student">Student</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- home -->
+    <string name="view_notice">View Notice</string>
+
+    <!-- post notice-->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="post_notice">Post Notice</string>
+    <string name="notice_not_found">No notice post !</string>
+
+    <!-- validations -->
+    <string name="v_username">Please enter username !</string>
+    <string name="v_password">Please enter password !</string>
+    <string name="v_first_name">Please enter first name !</string>
+    <string name="v_last_name">Please enter last name !</string>
+    <string name="v_email">Please enter email !</string>
+    <string name="v_email_invalid">Please enter valid email !</string>
+    <string name="v_contact">Please enter contact no. !</string>
+    <string name="v_confirm_password">Please enter confirm password !</string>
+    <string name="v_password_invalid">Password and confirmation password are not same !</string>
+    <string name="v_title">Please enter title !</string>
+    <string name="v_discription">Please enter description !</string>
+    <string name="v_date">Please select date !</string>
+    <string name="v_time">Please select time !</string>
+
+</resources>

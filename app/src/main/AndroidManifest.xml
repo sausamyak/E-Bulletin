@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samyaksau.e_bulletin"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:maxSdkVersion="19"/>
+
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- Creates a custom permission so only this app can receive its message. -->
+    <permission
+        android:name="com.example.samyaksau.e_bulletin.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.example.samyaksau.e_bulletin.permission.C2D_MESSAGE"/>
+    <!--This app has permission to register and receive data message. -->
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Permission to Vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".gcm.Controller"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ebulletin.Splash"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--  -->
+        <activity android:name=".ebulletin.AboutUs"
+            android:screenOrientation="portrait"/>
+
+        <!--  -->
+        <activity android:name=".ebulletin.Login"
+            android:screenOrientation="portrait"/>
+
+        <!--  -->
+        <activity android:name=".ebulletin.Home"
+            android:screenOrientation="portrait"/>
+
+        <!--  -->
+        <activity android:name=".ebulletin.NoticeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--  -->
+        <activity android:name=".ebulletin.ViewNotice"
+            android:screenOrientation="portrait"/>
+
+        <!--  -->
+        <activity android:name=".ebulletin.PostNotice"
+            android:screenOrientation="portrait"/>
+
+        <!--  -->
+        <activity android:name=".ebulletin.ResetPassword"
+            android:screenOrientation="portrait"/>
+
+        <!-- GCM  -->
+        <activity android:name=".ebulletin.Registration"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <action android:name="android.intent.action.DELETE"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+
+            <data android:scheme="com.idivecare.familypro" />
+        </intent-filter>
+        </activity>
+
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receive the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECIEVE"/>
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+                <category android:name="com.example.samyaksau.e_bulletin.ebulletin"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ebulletin.GCMIntentService"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/table_textview"
+                        android:text="@string/title"/>
+
+                    <EditText
+                        android:id="@+id/edittext_post_notice_title"
+                        style="@style/table_edittext"
+                        android:inputType="text"/>
+                </LinearLayout>
+
+                <!--  -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/table_textview"
+                        android:text="@string/description"/>
+
+                    <EditText
+                        android:id="@+id/edittext_post_notice_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:inputType="none"
+                        android:maxLines="4"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+                </LinearLayout>
+
+                <!--  -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/table_textview"
+                        android:text="@string/date"/>
+
+                    <EditText
+                        android:id="@+id/edittext_post_notice_date"
+                        style="@style/table_edittext"
+                        android:cursorVisible="false"
+                        android:inputType="text"/>
+                </LinearLayout>
+
+                <!--  -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/table_textview"
+                        android:text="@string/time"/>
+
+                    <EditText
+                        android:id="@+id/edittext_post_notice_time"
+                        style="@style/table_edittext"
+                        android:cursorVisible="false"
+                        android:inputType="text"/>
+                </LinearLayout>
+
+                <!--  -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/button_post_notice_submit"
+                        style="@style/button"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/post_notice"/>
+
+                    <Button
+                        android:id="@+id/button_post_notice_cancel"
+                        style="@style/button"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/cancel"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
